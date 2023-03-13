@@ -19,3 +19,16 @@
 144.0
 152.0
 
+### 解答：
+```
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+int main() {
+	int input = 0;
+	cin >> input;
+	cout << fixed << setprecision(1) << (input * 1.6L * 10 / 10) << endl;
+	return 0;
+}
+```
