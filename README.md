@@ -34,19 +34,19 @@
     {
         int H1= 0, M1=0, H2=0, M2=0;
 
-        cin >> H1 >> M1;//讀入停車時間 
-        cin >> H2>> M2;//讀入結束時間
+        cin >> H1 >> M1;
+        cin >> H2>> M2;
 
-        int time = (H2 * 60 + M2) - (H1 * 60 +M1);//總時數 
+        int time = (H2 * 60 + M2) - (H1 * 60 +M1); 
     
         if (time <= 120 && time >= 0) {
-         cout << time / 30 * 30 << endl;//2小時內的費用 
+         cout << time / 30 * 30 << endl; 
         }
         else if (time > 120 && time <= 240) {
-            cout << (time - 120) / 30 * 40 + 120 << endl;//4小時內的費用+2小時的費用
+            cout << (time - 120) / 30 * 40 + 120 << endl;
          }
      else {
-        cout << (time - 240) / 30 * 60 + 120 + 160 << endl;//4小時外的費用+4小時的費用+2小時的費用
+        cout << (time - 240) / 30 * 60 + 120 + 160 << endl;
      }
      return 0;
     }
