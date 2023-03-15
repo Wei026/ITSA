@@ -27,10 +27,10 @@
 
     int main()
     {
-        int num;
-        cin >> num;
-        if(num >= -128 && num <= 127){
-        bitset<8> binary(num);
+        int num;  
+        cin >> num; 
+        if(num >= -128 && num <= 127){    //判斷使用者輸入是否在範圍內
+        bitset<8> binary(num);            //轉換整數為8位元二進制表示
         cout << binary << endl;
     }
         return 0;
