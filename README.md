@@ -22,9 +22,9 @@
 11111110
 
 解答:
+
     #include <iostream>
     #include <bitset>
-
     using namespace std;
 
     int main()
